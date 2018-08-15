@@ -1,5 +1,7 @@
+#! python2.7
+
 import json
-from pseudoSQL import Table
+from MypseudoSQL import Table
 
 
 with open("../test_data/user.json") as f:
