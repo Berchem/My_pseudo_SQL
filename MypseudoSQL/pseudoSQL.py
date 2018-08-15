@@ -178,7 +178,6 @@ class Table:
                 join_table.insert([row[col] for col in self.columns] +
                                   [other_row[col] for col in additional_columns])
 
-            print other_rows, other_row["id"], row["id"]
             if left_join and not other_rows:
                 join_table.insert([row[col] for col in self.columns] +
                                   [None for col in additional_columns])
