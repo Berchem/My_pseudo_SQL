@@ -110,7 +110,7 @@ class Table:
         :return: table
         """
         where_table = Table(self.columns)
-        where_table.rows = filter(predicate, self.rows)
+        where_table.rows = list(filter(predicate, self.rows))
         return where_table
 
     def group_by(self, group_by_columns, aggregates, having=None):
